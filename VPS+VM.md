@@ -12,7 +12,7 @@
 9. Переходим в виртуальную консоль на сайте провайдера VPS.
 10. Диагностика на стороне VM ping 8.8.8.8, очевидно что на стороне VM не настроена сеть
 11. Проверяем cat /etc/netplan/*.yaml находим пустой файл настроек
-12. Конфигурируем [yaml](https://github.com/nyuhno/DevOps-trainig/blob/main/00-installer-config.yaml)
+12. Конфигурируем [yaml](https://github.com/nyuhno/DevOps-trainig/blob/main/00-installer-config.yaml) / после sudo netplan apply
 13. Проверяем подключение с клиентской стороны через ssh - все работает
 14. Обновляем сервер sudo apt update / sudo apt upgrade / sudo apt autoremove
 15. Связка VPS+VM запущена, сеть настроена, VM доступна из вне по SSH.
