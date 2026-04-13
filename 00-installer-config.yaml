@@ -1,0 +1,12 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp3s0:
+      addresses:
+        - 192.144.13.83/24
+      routes:
+        - to: default
+          via: 192.144.13.1
+      nameservers:
+        addresses: [8.8.8.8, 1.1.1.1]
