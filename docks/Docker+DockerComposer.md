@@ -26,9 +26,10 @@
 - `mkdir -p ~/devopspet && cd ~/devopspet`
 - `cat > ~/devopspet/app/package.json << 'EOF'` создаем и заполняем [package.json](https://github.com/nyuhno/DevOps-trainig/blob/main/package.json)
 - `cat ~/devopspet/app/package.json` - проверка
-- `touch app/server.js` - создаем и заполняем через nano [server.js](https://github.com/nyuhno/DevOps-trainig/blob/main/server.js)
-- `touch app/Dockerfile` - создаем и заполняем через nano [Dockerfile](https://github.com/nyuhno/DevOps-trainig/blob/main/Dockerfile)
-- `touch nginx/nginx.conf` - создаем и заполняем через nano [nginx.conf](https://github.com/nyuhno/DevOps-trainig/blob/main/nginx.conf)
+- `touch app/server.js` - создаем и заполняем через nano [server.js](https://github.com/nyuhno/DevOps-trainig/blob/main/app/src/server.js)
+- `touch app/Dockerfile` - создаем и заполняем через nano [Dockerfile](https://github.com/nyuhno/DevOps-trainig/blob/main/app/Dockerfile)
+- `touch nginx/nginx.conf` - создаем и заполняем через nano [nginx.conf](https://github.com/nyuhno/DevOps-trainig/blob/main/infra/nginx/nginx.conf)
+- `touch docker-compose.yml` - создаем и заполняем через nano [docker-compose.yml](https://github.com/nyuhno/DevOps-trainig/blob/main/infra/docker/docker-compose.yml)
 - `tree ~/devopspet` - проверяем структуру с помощью визуализации
 - `docker compose up -d` - поехали
   - приехали npm ci требует наличия файла package-lock.json, чиним
