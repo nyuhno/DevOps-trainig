@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build: ./app
-    container_name: myapp_app
+    container_name: DevOpsPet
     restart: unless-stopped
     environment:
       - NODE_ENV=production
@@ -21,7 +21,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: myapp_redis
+    container_name: DevOpsPet_redis
     restart: unless-stopped
     command: redis-server --appendonly yes
     volumes:
@@ -36,7 +36,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: myapp_nginx
+    container_name: DevOpsPet_nginx
     restart: unless-stopped
     ports:
       - "80:80"
